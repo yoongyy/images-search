@@ -16,9 +16,9 @@ Before you begin, ensure you have the following installed on your machine:
     - You can download it from [MongoDb official website](https://www.mongodb.com/).
 
 ## Step 1: Clone the Repository
-Open your terminal and clone the repository using Git. Replace `<repository-url>` with the actual URL of your repository:
+Open your terminal and clone the repository using Git:
 
-git clone [<repository-url>](https://github.com/yoongyy/images-search.git)
+git clone https://github.com/yoongyy/images-search.git
 
 cd images-search
 
