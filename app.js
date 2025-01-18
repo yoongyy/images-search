@@ -6,12 +6,14 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 
+// Environment Variables
+const { UNSPLASH_KEY, PIXABAY_KEY, STORYBLOCKS_PUBLIC_KEY, STORYBLOCKS_PRIVATE_KEY, STORYBLOCKS_PROJECT_ID, JWT_SECRET, PORT, MONGODB_URI } = process.env;
+
 const app = express();
 app.use(express.json());
 
 // Connect MongoDB
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/test';
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(MONGODB_URI, {})
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));
 
@@ -21,9 +23,6 @@ const UserSchema = new mongoose.Schema({
     password: { type: String, required: true }
 });
 const User = mongoose.model('User', UserSchema);
-
-// Environment Variables
-const { UNSPLASH_KEY, PIXABAY_KEY, STORYBLOCKS_PUBLIC_KEY, STORYBLOCKS_PRIVATE_KEY, STORYBLOCKS_PROJECT_ID, JWT_SECRET, PORT } = process.env;
 
 // Get Unsplash images
 async function fetchUnsplash(query) {
