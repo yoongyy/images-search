@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t your-dockerhub-username/your-app-name .
+          docker build -t yyyandyou/images-search .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
@@ -33,4 +33,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push your-dockerhub-username/your-app-name
+          docker push yyyandyou/images-search
