@@ -18,9 +18,9 @@ Before you begin, ensure you have the following installed on your machine:
 ## Step 1: Clone the Repository
 Open your terminal and clone the repository using Git. Replace `<repository-url>` with the actual URL of your repository:
 
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/yoongyy/images-search.git)
 
-cd <repository-name>
+cd images-search
 
 ## Step 2: Install Dependencies
 If your application uses Node.js, install the required dependencies by running:
