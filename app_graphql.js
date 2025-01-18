@@ -14,7 +14,8 @@ app.use(express.json());
 const { UNSPLASH_KEY, PIXABAY_KEY, STORYBLOCKS_PUBLIC_KEY, STORYBLOCKS_PRIVATE_KEY, STORYBLOCKS_PROJECT_ID, JWT_SECRET, PORT } = process.env;
 
 // Connect MongoDB
-mongoose.connect('mongodb://localhost:27017/test', {})
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/test';
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('MongoDB connection error:', err));
 
