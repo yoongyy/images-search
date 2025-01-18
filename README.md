@@ -48,4 +48,4 @@ Once the application is running, you can access it in your web browser. The defa
 
 http://localhost:3000
 
-## Replace `3000` with the port specified in your `docker-compose.yml` file if it's different.
+## Replace `3000` with the port specified and MONGODB_URI variable in your `docker-compose.yml` file if it's different.
