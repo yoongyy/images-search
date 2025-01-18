@@ -17,11 +17,14 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Step 1: Clone the Repository
 Open your terminal and clone the repository using Git. Replace `<repository-url>` with the actual URL of your repository:
+
 git clone <repository-url>
+
 cd <repository-name>
 
 ## Step 2: Install Dependencies
 If your application uses Node.js, install the required dependencies by running:
+
 npm install
 
 ## Step 3: Set Up Environment Variables
