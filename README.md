@@ -1,3 +1,30 @@
+# Images Search API
+This application is designed to allow users to search for images based on their queries. It leverages the APIs of third-party image providers, such as Pixabay, Unsplash, and Storyblocks, to fetch and return relevant images. Here’s a breakdown of how the application works:
+
+## Key Features:
+1. User Input:
+Users can enter a search query (e.g., "cats", "nature", "technology") into the application.
+
+2. API Integration:
+The application connects to multiple third-party image services:
+Pixabay: A free stock photo and video sharing platform that provides a vast collection of images.
+Unsplash: A platform offering high-resolution photos contributed by photographers around the world.
+Storyblocks: A subscription-based service that provides stock videos and images.
+
+3. Search Functionality:
+When a user submits a query, the application sends requests to the APIs of the integrated services.
+Each service returns a list of images that match the user's query.
+
+4. Response Handling:
+The application processes the responses from the different APIs, consolidating the results into a single list of images.
+It may filter or format the results to ensure consistency in how images are presented to the user.
+
+5. Display Results:
+The application displays the retrieved images in a user-friendly interface, allowing users to view and select images based on their preferences.
+
+6. Error Handling:
+The application includes error handling to manage issues such as API rate limits, network errors, or invalid queries, providing appropriate feedback to the user.
+
 # Installation Guide
 
 ## Prerequisites
@@ -46,8 +73,8 @@ If your not using Docker, run the following command(app.js is normal App, app_gr
 
 node app.js or node app_grqphql.js
 
-## Step 5: Access the Application
-Once the application is running, you can access it in your web browser. The default URL is usually:
+## Step 5: Access the Application API
+Once the application is running, you can access the API:
 
 http://localhost:3000
 
