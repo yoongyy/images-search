@@ -4,16 +4,19 @@
 Before you begin, ensure you have the following installed on your machine:
 
 1. **Node.js** (version 14 or higher)
-   - You can download it from [Node.js official website](https://nodejs.org/).
+   - You can download it from [Node.js official website](https://nodejs.org).
 
 2. **Docker** (for containerization)
    - You can download it from [Docker official website](https://www.docker.com/get-started).
 
 3. **Git** (for version control)
-   - You can download it from [Git official website](https://git-scm.com/).
+   - You can download it from [Git official website](https://git-scm.com).
 
 4. **MongoDb** (for storing username and password)
-    - You can download it from [MongoDb official website](https://www.mongodb.com/).
+    - You can download it from [MongoDb official website](https://www.mongodb.com).
+
+5. **Redis** (optional, for caching purpose)
+    - You can download it from [Redis official website](https://www.redis.io).
 
 ## Step 1: Clone the Repository
 Open your terminal and clone the repository using Git:
