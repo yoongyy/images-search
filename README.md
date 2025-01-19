@@ -23,7 +23,7 @@ It may filter or format the results to ensure consistency in how images are pres
 The application displays the retrieved images in a user-friendly interface, allowing users to view and select images based on their preferences.
 
 6. Error Handling:
-The application includes error handling to manage issues such as API rate limits, network errors, or invalid queries, providing appropriate feedback to the user.
+The application includes error handling to manage issues such as network errors, or invalid queries, providing appropriate feedback to the user.
 
 # Installation Guide
 
